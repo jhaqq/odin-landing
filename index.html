@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel='stylesheet' href='styles.css'/>
+    </head>
+<body>
+    <div class="fullpage">
+        <div class="tier1">
+            <div class="tier1center">
+                <div class="tier1left">
+                    <div class="tier1signup"></div>
+                </div>
+                <div class="tier1right"></div>
+            </div>
+        </div>
+        <div class="tier2">
+            <div class="tier2center">
+                <div class="box">
+                    <div class="img"></div>
+                </div>
+                <div class="box">
+                    <div class="img"></div>
+                </div>
+                <div class="box">
+                    <div class="img"></div>
+                </div>
+                <div class="box">
+                    <div class="img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tier3"></div> <!-- Just need a box with text for this. Maybe an additional one for the sig. -->
+        <div class="tier4">
+            <div class="tier4center">
+                <div class="tier4signup"></div>
+            </div>
+        </div>
+        <div class="tier5"></div>
+    </div>
+</body>
+</html>
+
+<!--
+
+    How do we want to organize this?
+
+    The entire page will be a flex container. (fullpage)
+
+    We have 4 equally sized boxes, we will call these tiers.
+        The tiers are vertically stacked on top one another.
+        Each tier has its own content (so each will be a flex container) (tier1...tier4)
+
+        INDIVIDUAL TIERS:
+
+        TIER 1:
+            In the center, one big flex container with two containers side by side, each with their own content.
+            The words on top should be able to be aligned easily enough (without flex).
+
+            Background: #1F2937
+-->
