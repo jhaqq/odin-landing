@@ -1,89 +1,177 @@
 .fullpage {
     display: flex; 
     height: 1912px;
-    width: 1440px;
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
+    font-family: Roboto;
 }
   
 /*all items for tier 1 */
 .tier1 {
     display: flex;
-    border: 4px solid red;
     height: 25%;
     background: #1f2937;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex: 1;
 }
 
-    .tier1center { /*center box that contains two more boxes*/
+    .tier1main { /*center box that contains two more boxes*/
         width: 70%;
-        height: 50%;
-        border: 4px solid red;
+        height: 75%;
         display: flex;
     }
 
         .tier1left {
             width: 50%;
-            background:#1f2937;
+            flex-direction: column;
             display: flex;
-            
+            justify-content: space-between;
         }
 
-            .tier1signup {
-                width: 25%;
-                height: 20%;
-                background: blue;
-                border: 4px solid red;
-                align-self: flex-end;
+            .tier1toplefttext {
+                color: #e5e7eb;
+                font-size: 18px;
+                font-weight: 900;
+                padding: 10px;
+                height: 10%;
+                align-self: flex-start;
+            }
+            
+            .tier1leftmid {
+                height: 65%;
             }
 
+            .tier1midtext1 {
+                color: #f9faf8;
+                font-size: 48px;
+                font-weight: 900;
+                height: 50%;
+            }
+
+            .tier1midtext2 {
+                color: #f9faf8;
+                font-size: 18px;
+                font-weight: 300;
+                height: 30%;
+            }
+
+            .tier1signup {
+                color: white;
+                background: #3882f6;
+                height: 15%;
+                width: 25%;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        /* TIER 1 RIGHT SIDE */
         .tier1right {
-            background: gray;
-            border: 4px solid red;
             width: 50%;
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
         }
+
+            .tier1toprighttext {
+                color: #e5e7eb;
+                font-size: 18px;
+                padding: 10px;
+                align-self: flex-end;
+                height: 10%;
+            }
+
+            .tier1rightmid {
+                height: 60%;
+                background: #b6b7b9;
+            }
+
+/* TIER 2 */
 
 .tier2 {
     background: white;
-    border: 4px solid red;
     height: 25%;
-    justify-content: center;
-    align-items: center;
     display: flex;
+    flex-direction: column;
 }
 
+    .tier2toptext {
+        color: #1f2937;
+        align-items: center;
+        justify-content: center;
+        height: 30%;
+        display: flex;
+        font-weight: 900;
+        font-size: 36px;
+    }
+
     .tier2center {
-        width: 50%;
+        width: 60%;
         height: 50%;
         gap: 40px;
+        align-self: center;
+        justify-self: center;
         justify-content: center;
+        align-items: center;
         display: flex;
     }
 
     .tier2center .box {
         width: 20%;
-        height: 100%;
-        border: 4px solid red;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
     }
     
         .box .img {
-            height: 60%;
+            height: 65%;
             width: 100%;
-            border: 4px solid blue;
+            border: 4px solid #3882f6;
             border-radius: 10px;
         }
 
 .tier3 { /*don't need much for this besides text.. maybe have a box to contain it all? */
-    background:lightgray;
-    border: 4px solid red;
+    background:#e5e7eb;
     height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+    .tier3center {
+        height: 60%;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .tier3maintext {
+            align-self: center;
+            font-size: 36px;
+            font-weight: 300;
+            font-style: italic;
+            color: #1f2937;
+            font-weight:lighter;
+            text-align: left;
+            width: 100%;
+        }
+
+        .tier3sig {
+            font-size: 24px;
+            font-weight: 900;
+            align-self: flex-end;
+            width: 40%;
+            text-align: right;
+        }
 
 .tier4 {
     background: white;
-    border: 4px solid red;
     height: 20%;
     justify-content: center;
     flex-direction: column;
@@ -91,12 +179,57 @@
 }
 
     .tier4center {
-        height: 30%;
-        width: 50%;
-        border: 4px solid red;
+        height: 40%;
+        width: 70%;
+        border-radius: 5px;
+        background-color: #3882f6;
         justify-self: center;
         align-self: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
     }
+
+        .tier4main {
+            width: 80%;
+            height: 40%;
+            display: flex;
+            align-items: center;
+        }
+
+            .tier4left {
+                height: 100%;
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+                .tier4lefttext1 {
+                    color: #e5e7eb;
+                    font-weight: 500;
+                    font-size: 24px;
+                    height: 50%;
+                }
+
+                .tier4lefttext2 {
+                    color: #e5e7eb;
+                    font-size: 18px;
+                    height: 50%;
+                }
+
+            .tier4signup {
+                color: white;
+                background: #3882f6;
+                border: 4px solid #e5e7eb;
+                height: 50%;
+                width: 15%;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
 .tier5 {
     background: #1f2937;
